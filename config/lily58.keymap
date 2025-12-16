@@ -7,6 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    flavor = "balanced";
+    };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -44,11 +48,6 @@
             key-positions = <26 27>;
         };
     };
-
-
-    &mt {
-        flavor = "balanced";
-        };
 
     behaviors {
         sk_mod: sk_mod {

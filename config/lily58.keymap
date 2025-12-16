@@ -48,6 +48,9 @@
 
 
     behaviors {
+        &mt {
+            flavor = "balanced";
+        };
         sk_mod: sk_mod {
             compatible = "zmk,behavior-sticky-key";
             label = "SK_MOD";
@@ -86,9 +89,9 @@
 
         raise_layer {
             bindings = <
-&trans  &trans         &trans            &trans          &trans       &trans                              &trans            &trans          &trans        &trans             &trans           &trans
-&trans  &trans         &trans            &trans          &trans       &trans                              &trans            &trans          &trans        &trans             &trans          &trans
-&trans  &trans         &trans            &trans          &trans       &trans                              &kp LEFT          &kp DOWN        &kp UP_ARROW  &kp RIGHT          &kp K_MENU       &trans
+&trans  &trans         &trans            &trans          &trans       &trans                              &trans            &trans          &trans        &trans             &trans            &trans
+&trans  &trans         &trans            &trans          &trans       &trans                              &kp HOME          &trans          &trans        &kp END            &trans            &trans
+&trans  &trans         &trans            &trans          &trans       &trans                              &kp LEFT          &kp DOWN        &kp UP_ARROW  &kp RIGHT          &trans            &trans
 &trans  &trans         &trans            &trans          &trans       &trans                              &trans            &trans          &trans        &trans             &trans            &trans 
                                          &trans  &mt LGUI TAB  &mt LCTRL ENTER  &mo 3        &trans        &mt RSHFT SPACE  &kp BACKSPACE  &trans
             >;

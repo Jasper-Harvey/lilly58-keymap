@@ -46,11 +46,11 @@
     };
 
 
+    &mt {
+        flavor = "balanced";
+        };
 
     behaviors {
-        &mt {
-            flavor = "balanced";
-        };
         sk_mod: sk_mod {
             compatible = "zmk,behavior-sticky-key";
             label = "SK_MOD";
